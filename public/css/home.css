@@ -1,0 +1,106 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+.maine{
+    background-color: black;
+}
+
+header{
+    display:flex;
+    width: 60%;
+    margin: auto;
+    height: 7vh;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.logo-container,.nav-links{
+    display:flex;
+    margin: 0px;
+    color: rgb(0, 183, 255);
+
+}
+.logo-container{
+    
+    flex: 1;
+
+}
+
+nav{
+    flex: 1;
+    
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    
+    
+}
+
+.navlink{
+    font-size: 18px;
+    color: white;
+    
+    text-decoration: none;
+}
+
+main{
+    
+    
+}
+.wowman{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+   
+    background-image: url("../img/back.jpg");
+    background-position: 25% 50%;
+    
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    
+    color: white;
+}
+
+.intro-text p {
+    font-size: 22px;
+    margin-top: 5px;
+    color: white;
+}
+
+.intro{
+    flex: 1;
+    display: inline-block;
+}
+
+.cta{
+    padding: 1px 0px 0px 0px;
+    
+}
+
+.cta-browsem{
+    border: 2px solid rgb(47, 113, 255);
+    background: transparent;
+    width: 150px;
+    height: 40px;
+    cursor:pointer;
+    color: white;
+}
+
+.cta-contact{
+    color: lightblue;
+    border: 2px solid white;
+    background: transparent;
+    width: 150px;
+    height: 40px;
+    cursor:pointer;
+}
