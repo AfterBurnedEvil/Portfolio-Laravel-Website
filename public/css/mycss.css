@@ -1,0 +1,39 @@
+.mycards{
+    margin: 0 auto;
+    max-width:1000px;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+    gap: 20px;
+}
+
+.mycard{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.mycardimg{
+    width:100%;
+    display: block;
+}
+
+.mycardcontent{
+    line-height: 1.5;
+    padding: 15px;
+    background: rgb(243, 243, 243);
+}
+
+.mycardcontent h4{
+    margin-top: 0px;
+}
+.mycardlinks{
+    background: rgb(100, 162, 255);
+}
+
+.mycardlink a{
+    justify-self: center;
+}
+
+.animatehoverbar:hover{
+    background-color: green;
+
+}
