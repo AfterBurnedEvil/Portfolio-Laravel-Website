@@ -71,7 +71,7 @@ body, html {
   <p class="w3-center">{{$details->mybio}}</p>
       <div class="w3-row">
           <div class="w3-col m5 l5 w3-center">
-            <img src="../img/propic.jpg">
+            <img src="../img/propic.jpg" class="w3-hover-sepia">
           </div>
           <div class="w3-col m6 l6 w3-hide-small">
             <p><i class="fa fa-birthday-cake"></i> Birthday : {{ $details->dob }}</p>

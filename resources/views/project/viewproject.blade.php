@@ -55,17 +55,24 @@
     <p>{!!$projdetails->body!!}</p>
 
 
-  @auth
+</div>
+<div class="w3-container w3-content">
 
-  <a href="{{ route('project_editview',$projdetails->id) }}"><button class="w3-button w3-ripple w3-center w3-blue w3-round">Edit Project</button></a> <br><br>
-  <form action="{{route('project_delete',$projdetails->id)}}" method="POST">
-    @csrf
-    <button class="w3-button w3-red" type="submit">Delete Project</button> <br> <br>
-  </form>
-  @endauth
+
   <div class="fb-like" data-href="{{Request::url()}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
   <div class="fb-comments" data-href="{{Request::url()}}" data-width="" data-numposts="5"></div>
+  @auth
+<div class="w3-container">
+<a href="{{ route('project_editview',$projdetails->id) }}"><button class="w3-button w3-ripple w3-center w3-blue w3-round">Edit Project</button></a> <br><br>
+<form action="{{route('project_delete',$projdetails->id)}}" method="POST">
+  @csrf
+  <button class="w3-button w3-red" type="submit">Delete Project</button> <br> 
+</form>
 </div>
+</div>
+@endauth
+
+
 
 
 <div class="w3-container w3-black w3-margin-top w3-padding-32">

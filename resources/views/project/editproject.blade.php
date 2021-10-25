@@ -21,7 +21,7 @@
         <p>
         <label>Body</label>
         
-        <textarea style="height: 150px; resize: none;" name="body" type="textarea"></textarea></p>
+        <textarea style="height: 150px; resize: none;" name="body" type="textarea">{{$projdetails->body}}</textarea></p>
         <input name="hidden_img" type="hidden" value="{{$projdetails->img}}">
         <button class="w3-button w3-round-xlarge w3-blue" type="submit">Submit</button> <br>
 </form>
@@ -31,9 +31,6 @@
 
 <script>
 CKEDITOR.replace( 'body' );
-var editor = CKEDITOR.instances['body'];
-    editor.setData('{!!$projdetails->body!!}');
-
 </script>
 
 @endsection
