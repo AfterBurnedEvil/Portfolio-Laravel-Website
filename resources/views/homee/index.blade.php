@@ -57,6 +57,9 @@ body, html {
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY<span class="w3-hide-small"></span> RESUME</span>
   </div>
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+    <i class="fa fa-angle-double-down" style="font-size:48px;color:white"></i>
+  </div>
 </div>
 
 
@@ -65,12 +68,17 @@ body, html {
 
 <div class="w3-content w3-container w3-shadow w3-animate-opacity w3-margin-bottom">
   <h1 class="w3-center">About Me</h1>
-  <p>{{$details->mybio}}</p>
+  <p class="w3-center">{{$details->mybio}}</p>
       <div class="w3-row">
-          <div class="w3-col m5 l4">
+          <div class="w3-col m5 l5 w3-center">
             <img src="../img/propic.jpg">
           </div>
-          <div class="w3-col m6 l6">
+          <div class="w3-col m6 l6 w3-hide-small">
+            <p><i class="fa fa-birthday-cake"></i> Birthday : {{ $details->dob }}</p>
+            <p><i class="fa fa-map-pin"></i> Hometown : {{ $details->hometown }}</p>
+            <p><i class="fa fa-envelope"></i> Email : {{ $details->email }}</p>
+          </div>
+          <div class="w3-col m6 l8 w3-hide-large w3-center w3-hide-medium">
             <p><i class="fa fa-birthday-cake"></i> Birthday : {{ $details->dob }}</p>
             <p><i class="fa fa-map-pin"></i> Hometown : {{ $details->hometown }}</p>
             <p><i class="fa fa-envelope"></i> Email : {{ $details->email }}</p>
