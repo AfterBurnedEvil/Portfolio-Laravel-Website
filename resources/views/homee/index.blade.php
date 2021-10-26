@@ -91,7 +91,7 @@ body, html {
 </div>
 
 <div class="w3-container w3-padding-32 w3-animate-opacity w3-light-grey ">
-<h1 class="w3-center">My Skills</h1>
+<h1 class="w3-center w3-lobster">My Skills</h1>
   <div class="w3-content">
     @foreach($skillnames as $skill)
     <p>{{$skill['name']}} </p>
@@ -105,7 +105,7 @@ body, html {
 <div class="w3-container w3-content w3-animate-opacity w3-padding-32">
 
 <div class="w3-container w3-center w3-margin-top">
-  <h1>My Projects</h1>
+  <h1 class="w3-lobster">My Projects</h1>
   <div class="mycards">
 
   @foreach ($projects as $p)
@@ -134,7 +134,7 @@ body, html {
 
 <div class="w3-container contactanimate w3-margin-top w3-padding-32">
 <div class="w3-container w3-content">
-  <h1 class="w3-center">Contact Me</h1>
+  <h1 class="w3-center w3-lobster">Contact Me</h1>
   <p>Let's get in touch</p>
   <form action="{{route('send_message')}}" method="POST">
     @csrf
