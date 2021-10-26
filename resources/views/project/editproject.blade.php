@@ -29,8 +29,11 @@
 </div>
 <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
 
-<script>
-CKEDITOR.replace( 'body' );
+<script type="text/javascript">
+CKEDITOR.replace( 'body' ,{
+    filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
+    filebrowserUploadMethod: 'form'
+});
 </script>
 
 @endsection

@@ -43,8 +43,7 @@ Route::group(['middleware' => ['auth']], function() {
 
 Route::group(['middleware' => ['auth','isAdmin']], function() {
 
-
-    
+    Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
     
     Route::post('/dashboard/skills/store', [SkillController::class, 'store'])->name('skillz_store');
     
