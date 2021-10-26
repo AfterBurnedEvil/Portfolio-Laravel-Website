@@ -33,13 +33,41 @@
     justify-self: center;
 }
 
-.marginanimate{
-    margin-top: 50px;
-    transition: margin-top 700ms;
+.margin-animate{
+    position: relative;
+    bottom: 0px;
+    transition: bottom 700ms;
 
 }
 
-.marginanimate:hover{
-    margin-top: 505px;
+.margin-animate:hover{
+    bottom: 15px;
 
+}
+
+.contactanimate {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  /* First image (Logo. Full height) */
+.contactanimate {
+      background: linear-gradient(-45deg, #000000, #408cff, #000000, #bddcff);
+      background-size: 400% 400%;
+      animation: gradientt 15s ease infinite;
+}
+  
+@keyframes gradientt {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

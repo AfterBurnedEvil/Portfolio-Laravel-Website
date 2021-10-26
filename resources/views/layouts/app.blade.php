@@ -10,12 +10,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <link href=" {{ URL::asset('css/mycss.css'); }}" rel="stylesheet">
 
 <style>
 
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
+}
+
 .w3-Allerta {
   font-family: 'Allerta Stencil', sans-serif;
+}
+
+.w3-roboto{
+  font-family: 'Roboto', sans-serif;
 }
 
 body, h1, h2, h3, h4, h5, h6  {
@@ -26,6 +36,7 @@ body, h1, h2, h3, h4, h5, h6  {
   color: white;
 }
 </style>
+
 {!! htmlScriptTagJsApi([
   'action' => 'homepage',
   'callback_then' => 'callbackThen',

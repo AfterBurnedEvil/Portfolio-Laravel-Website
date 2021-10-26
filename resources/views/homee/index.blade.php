@@ -67,8 +67,8 @@ body, html {
 
 
 <div class="w3-content w3-container w3-shadow w3-animate-opacity w3-margin-bottom">
-  <h1 class="w3-center">About Me</h1>
-  <p class="w3-center">{{$details->mybio}}</p>
+  <h1 class="w3-center w3-lobster">About Me</h1>
+  <p class="w3-center w3-roboto">{{$details->mybio}}</p>
       <div class="w3-row">
           <div class="w3-col m5 l5 w3-center">
             <img src="../img/propic.jpg" class="w3-hover-sepia">
@@ -110,9 +110,9 @@ body, html {
 
   @foreach ($projects as $p)
   
-    <div class="w3-card-4">
+    <div class="w3-card-4 margin-animate">
       <img src="../images/{{$p->img}}" alt="Image" class="mycardimg">
-      <div class="w3-container w3-center w3-padding-16 margin-animate">
+      <div class="w3-container w3-center w3-padding-16 ">
         <h4>{{$p->title}}</h4>
         <a href="{{ route('project_viewspecific',$p->id) }}" class="w3-button w3-block w3-blue w3-hover-shadow">View Project</a>
       </div>
@@ -132,7 +132,7 @@ body, html {
 </div>
 </div>
 
-<div class="w3-container w3-sand w3-margin-top w3-padding-32">
+<div class="w3-container contactanimate w3-margin-top w3-padding-32">
 <div class="w3-container w3-content">
   <h1 class="w3-center">Contact Me</h1>
   <p>Let's get in touch</p>
