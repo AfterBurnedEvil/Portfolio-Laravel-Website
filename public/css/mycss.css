@@ -33,7 +33,13 @@
     justify-self: center;
 }
 
-.animatehoverbar:hover{
-    background-color: green;
+.marginanimate{
+    margin-top: 50px;
+    transition: margin-top 700ms;
+
+}
+
+.marginanimate:hover{
+    margin-top: 505px;
 
 }
