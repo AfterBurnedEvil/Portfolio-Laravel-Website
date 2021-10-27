@@ -90,3 +90,11 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
+.contactelements a{
+    margin-right: 15px;
+    transition : margin-right 700ms;
+}
+
+.contactelements a:hover{
+    margin-right:20px;
+}

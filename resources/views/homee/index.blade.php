@@ -56,19 +56,21 @@ body, html {
 <div class="bgimg-1 w3-display-container w3-opacity-min">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <div class="fadetext fade">
-    <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">Hi!</span>
+    <span class="w3-center w3-padding-large w3-white w3-large w3-wide w3-animate-opacity">Hi!</span>
     </div>
     <div class="fadetext fade">
-      <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">I am a backend web developer</span>
+      <span class="w3-center w3-padding-large w3-white w3-large w3-wide w3-animate-opacity w3-hide-small w3-hide-medium">I am a backend web developer</span>
+      <div class="w3-center w3-text-white w3-large w3-animate-opacity w3-hide-large">I am a backend web developer</div>
     </div>
     <div class="fadetext fade">
-      <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">Scroll down to view everything about me</span>
+      <span class="w3-center w3-padding-large w3-white w3-large w3-wide w3-animate-opacity w3-hide-small">Scroll down to view everything about me</span>
+      <div class="w3-center w3-text-white w3-large w3-animate-opacity w3-hide-large w3-hide-medium">Scroll down to view everything about me</div>
     </div>
   </div>
-  <div class="w3-display-right contactelements w3-text-white w3-center">
-    <a href="http://www.facebook.com/afterburnedevil"><i class="fa fa-facebook w3-xxlarge"></i></a> &nbsp <br>
-    <a href="http://www.instagram.com/afterburnedevil"><i class="fa fa-instagram w3-xxlarge"></i></a>&nbsp <br>
-    <a href="https://soundcloud.com/user-499108523"><i class="fa fa-soundcloud w3-xxlarge"></i></a> <br>
+  <div class="w3-display-right contactelements w3-text-white w3-center w3-padding-64">
+    <a href="http://www.facebook.com/afterburnedevil"><i class="fa fa-facebook w3-xlarge"></i></a> &nbsp <br>
+    <a href="http://www.instagram.com/afterburnedevil"><i class="fa fa-instagram w3-xlarge"></i></a>&nbsp <br>
+    <a href="https://soundcloud.com/user-499108523"><i class="fa fa-soundcloud w3-xlarge"></i></a> <br>
   </div>
   <div class="w3-display-bottommiddle" style="white-space:nowrap;">
     <i class="fa fa-angle-double-down" style="font-size:48px;color:white"></i>
