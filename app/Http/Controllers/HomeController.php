@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $projects = Project::all();
+        $projects = Project::all()->except(12);
         $idd = 1;
         if (uDetail::where('user_id', '=', $idd)->exists()) {
             $skillnames = $this->viewskill($idd);

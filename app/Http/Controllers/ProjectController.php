@@ -11,7 +11,7 @@ class ProjectController extends Controller
 
     public function index()
     {
-        $projects = Project::all();
+        $projects = Project::all()->except(12);
         return view('project.viewallproject',compact('projects'));
     }
     public function createproj()

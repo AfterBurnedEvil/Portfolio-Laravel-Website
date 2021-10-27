@@ -55,7 +55,20 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY<span class="w3-hide-small"></span> RESUME</span>
+    <div class="fadetext fade">
+    <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">Hi!</span>
+    </div>
+    <div class="fadetext fade">
+      <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">I am a backend web developer</span>
+    </div>
+    <div class="fadetext fade">
+      <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">Scroll down to view everything about me</span>
+    </div>
+  </div>
+  <div class="w3-display-right contactelements w3-text-white w3-center">
+    <a href="http://www.facebook.com/afterburnedevil"><i class="fa fa-facebook w3-xxlarge"></i></a> &nbsp <br>
+    <a href="http://www.instagram.com/afterburnedevil"><i class="fa fa-instagram w3-xxlarge"></i></a>&nbsp <br>
+    <a href="https://soundcloud.com/user-499108523"><i class="fa fa-soundcloud w3-xxlarge"></i></a> <br>
   </div>
   <div class="w3-display-bottommiddle" style="white-space:nowrap;">
     <i class="fa fa-angle-double-down" style="font-size:48px;color:white"></i>
@@ -85,7 +98,7 @@ body, html {
           </div>
       </div>
       <div class="w3-center w3-padding-64 w3-bar">
-        <a href="#"><button class="w3-button w3-ripple w3-center w3-green w3-round">Read More About Me!</button></a>
+        <a href="{{ route('project_viewspecific',12) }}"><button class="w3-button w3-ripple w3-center w3-green w3-round">Read More About Me!</button></a>
         <a href="#"><button class="w3-button w3-ripple w3-center w3-red w3-round">Download My Resume!</button></a>
       </div>
 </div>
@@ -148,6 +161,23 @@ body, html {
 
 </div>
 </div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("fadetext");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+</script>
 
 
 @endsection
