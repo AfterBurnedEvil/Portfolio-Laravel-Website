@@ -58,7 +58,6 @@
 </div>
 <div class="w3-container w3-content">
 
-
   <div class="fb-like" data-href="{{Request::url()}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
   <div class="fb-comments" data-href="{{Request::url()}}" data-width="" data-numposts="5"></div>
   @auth
@@ -69,8 +68,9 @@
   <button class="w3-button w3-red" type="submit">Delete Project</button> <br> 
 </form>
 </div>
-</div>
 @endauth
+</div>
+
 
 
 
