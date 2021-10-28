@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\CkeditorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,7 +44,7 @@ Route::group(['middleware' => ['auth']], function() {
 
 Route::group(['middleware' => ['auth','isAdmin']], function() {
 
-    Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
+    Route::post('/ckeditor/upload', [CkeditorController::class, 'upload'])->name('ckeditor.upload');
     
     Route::post('/dashboard/skills/store', [SkillController::class, 'store'])->name('skillz_store');
     

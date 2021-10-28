@@ -17,7 +17,7 @@
         <input type="file" name="imgz">
         <p>
         <label>Body</label>
-        <textarea style="height: 150px; resize: none;" class="ckeditor" name="body" type="textarea"></textarea></p>
+        <textarea style="height: 150px; resize: none;" id="crproj" class="ckeditor" name="body" type="textarea"></textarea></p>
         <button class="w3-button w3-round-xlarge w3-blue" type="submit">Submit</button> <br>
       </form>
 
@@ -33,11 +33,29 @@
 
 </div>
 
-<script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-       $('.ckeditor').ckeditor();
-    });
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#crproj' ),{
+
+        ckfinder: {
+            // Upload the images to the server using the CKFinder QuickUpload command.
+            uploadUrl: '{{route('ckeditor.upload', ['_token' => csrf_token() ])}}',
+
+            // Define the CKFinder configuration (if necessary).
+            options: {
+                resourceType: 'Images'
+            }
+        }
+    })
+
+    .then( editor => {
+            console.log( editor );
+    } )
+    .catch( error => {
+            console.error( error );
+    } );
+    
 </script>
 
 @endsection
