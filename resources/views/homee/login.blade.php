@@ -23,6 +23,10 @@
     <button class="w3-button w3-round-xlarge w3-blue" type="submit">
     {{ __('Login') }}
     </button>
+    </form>
+    <p>Guest Login </p>
+    <p>Username : guest </p>
+    <p>Password : guest1234 </p>
     </div>
 </div>
 @endsection

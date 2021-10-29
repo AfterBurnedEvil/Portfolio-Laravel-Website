@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Project;
 use Illuminate\Support\Facades\File; 
+use Image;
 
 class ProjectController extends Controller
 {
@@ -31,6 +32,12 @@ class ProjectController extends Controller
 
         $file = $request->file('imgz');
         $imageName = time().'.'.$file->getClientOriginalExtension();
+        
+
+        $input['file'] = $imageName;
+        $destinationPath = public_path('/thumbnail');
+        $imgFile = Image::make($file->getRealPath());
+        $imgFile->resize(292, 202)->save($destinationPath.'/'.$input['file']);
         $file->move(public_path('images'), $imageName);
 
         $id =Project::create([
@@ -72,6 +79,11 @@ class ProjectController extends Controller
         {
             $file = $request->file('imgz');
             $imageName = time().'.'.$file->getClientOriginalExtension();
+
+            $input['file'] = $imageName;
+            $destinationPath = public_path('/thumbnail');
+            $imgFile = Image::make($file->getRealPath());
+            $imgFile->resize(292, 202)->save($destinationPath.'/'.$input['file']);
             $file->move(public_path('images'), $imageName);
 
             Project::whereId($id)->update([

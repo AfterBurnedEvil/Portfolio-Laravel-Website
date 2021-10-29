@@ -126,7 +126,7 @@ body, html {
   @foreach ($projects as $p)
   
     <div class="w3-card-4 margin-animate">
-      <img src="../images/{{$p->img}}" alt="Image" class="mycardimg">
+      <img src="../thumbnail/{{$p->img}}" alt="Image" class="mycardimg">
       <div class="w3-container w3-center w3-padding-16 ">
         <h4>{{$p->title}}</h4>
         <a href="{{ route('project_viewspecific',$p->id) }}" class="w3-button w3-block w3-blue w3-hover-shadow">View Project</a>

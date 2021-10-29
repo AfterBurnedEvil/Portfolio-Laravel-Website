@@ -23,6 +23,24 @@
       color: rgb(0, 0, 0);
       line-height: 1.8;
     }
+    .image-style-side {
+    max-width: 50%;
+    float: right;
+    margin-left: var(--ck-image-style-spacing);
+    }
+
+    .image.image_resized {
+      display: block;
+      box-sizing: border-box;
+    }
+
+    .image.image_resized img {
+      width: 100%;
+    }
+
+    .image.image_resized > figcaption {
+      display: block;
+    }
     
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
@@ -49,12 +67,8 @@
 </div>
 
 
-<div class="w3-container w3-content">
-
-    <h1>{!!$projdetails->title!!}</h1>
+<div class="w3-content w3-padding-16 w3-container">
     <p>{!!$projdetails->body!!}</p>
-
-
 </div>
 <div class="w3-container w3-content">
 
